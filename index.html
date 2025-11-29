@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Giridhar Gowda G A — Portfolio</title>
+
+<style>
+/* ---------------------- GLOBAL STYLES ---------------------- */
+:root {
+  --accent: #8daaa0;
+  --white: #ffffff;
+  --text: #111;
+  --muted: #555;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--white);
+}
+
+/* ---------------------- TOP BAR ---------------------- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 48px;
+  background: var(--white);
+}
+.topbar .brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+}
+.nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: var(--text);
+}
+.download-btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* ---------------------- HERO SECTION ---------------------- */
+.hero {
+  display: flex;
+  min-height: 80vh;
+}
+.left {
+  flex: 1;
+  padding: 100px 8%;
+}
+.right {
+  width: 42%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+.name {
+  font-family: "Times New Roman", serif;
+  font-size: 80px;
+  margin: 0;
+}
+.role {
+  font-size: 26px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+.meta p {
+  margin: 10px 0;
+  color: var(--text);
+}
+
+.photo-wrap {
+  width: 70%;
+  background: #fff;
+  padding: 18px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.photo-wrap img {
+  width: 100%;
+}
+
+/* ---------------------- SECTIONS ---------------------- */
+section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.card {
+  margin-top: 32px;
+  border-top: 1px solid #e2e2e2;
+  padding-top: 16px;
+}
+.projects .project {
+  margin-bottom: 16px;
+}
+.meta-small {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ---------------------- CONTACT SECTION ---------------------- */
+#contactForm {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+#contactForm input,
+#contactForm textarea {
+  margin: 8px 0;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+#contactForm button {
+  background: #111;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+#formMsg {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+/* ---------------------- RESPONSIVE ---------------------- */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+  .right {
+    width: 100%;
+  }
+  .name {
+    font-size: 48px;
+  }
+  .left {
+    padding: 40px 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ---------------------- HEADER ---------------------- -->
+<header class="topbar">
+  <div class="brand">Curriculum Vitae</div>
+  <nav class="nav">
+    <a href="#about">about</a>
+    <a href="#resume">resume</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <a href="resume.pdf.pdf" class="download-btn">Download CV</a>
+</header>
+
+<!-- ---------------------- HERO SECTION ---------------------- -->
+<main class="hero">
+  <section class="left">
+    <h1 class="name">Giridhar Gowda G A</h1>
+    <h2 class="role">Java Full Stack Developer</h2>
+
+    <div class="meta">
+      <p><strong>Location:</strong> Hassan, Karnataka, India</p>
+      <p><strong>Graduation:</strong> Malnad College of Engineering — 2027</p>
+      <p><strong>Experience:</strong> Fresher</p>
+      <p><strong>Hobbies:</strong> Playing drums</p>
+    </div>
+
+    <section class="card">
+      <h3>Skills</h3>
+      <ul>
+        <li>Java, Spring Boot, Hibernate</li>
+        <li>JavaScript (ES6+), React Basics</li>
+        <li>HTML5, CSS3, Responsive Design</li>
+        <li>MySQL, JDBC</li>
+        <li>Git, IntelliJ, VS Code</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>Education</h3>
+      <p><strong>B.E — Malnad College of Engineering</strong><br />Graduation Year: 2027</p>
+    </section>
+
+    <section class="card projects">
+      <h3>Projects</h3>
+
+      <div class="project">
+        <h4>Campus Connect Portal</h4>
+        <p>Platform for students & faculty to manage announcements.</p>
+        <p class="meta-small"><strong>Stack:</strong> Java, Spring Boot, MySQL</p>
+      </div>
+
+      <div class="project">
+        <h4>Smart Agriculture Monitoring</h4>
+        <p>Sensor dashboard for soil moisture and temperature.</p>
+        <p class="meta-small"><strong>Stack:</strong> Java, REST API, React</p>
+      </div>
+
+      <div class="project">
+        <h4>Online Food Ordering</h4>
+        <p>Full ordering flow with admin panel.</p>
+        <p class="meta-small"><strong>Stack:</strong> Java (JSP/Servlets), JDBC</p>
+      </div>
+
+      <div class="project">
+        <h4>Personal Expense Tracker</h4>
+        <p>Track daily expenses and generate reports.</p>
+        <p class="meta-small"><strong>Stack:</strong> Java, JSP, MySQL</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Achievements & Certifications</h3>
+      <ul>
+        <li>Completed Java basics certificate</li>
+        <li>Completed web fundamentals training</li>
+      </ul>
+    </section>
+  </section>
+
+  <section class="right">
+    <div class="photo-wrap">
+      <img src="profile.jpg" alt="Giridhar Gowda" />
+    </div>
+  </section>
+</main>
+
+<!-- ---------------------- RESUME XML/XSL PREVIEW ---------------------- -->
+<!-- <section id="resume" style="padding:40px 8%;">
+  <h3> Resume Preview</h3>
+  <button id="viewXml">View Resume</button>
+  <div id="xmlResult" style="margin-top:20px;"></div>
+</section> -->
+
+<!-- ---------------------- CONTACT FORM ---------------------- -->
+<section id="contact" style="padding:40px 8%;">
+  <h3>Contact Me</h3>
+  <form id="contactForm">
+    <input name="name" type="text" placeholder="Your name" required />
+    <input name="email" type="email" placeholder="Your email" required />
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <div id="formMsg"></div>
+</section>
+
+<script>
+/* ---------------------- CONTACT FORM ---------------------- */
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  document.getElementById("formMsg").textContent = "Message sent successfully!";
+});
+
+/* ---------------------- XML + XSLT RESUME PREVIEW ---------------------- */
+document.getElementById("viewXml").addEventListener("click", async () => {
+  const xmlText = `
+    <resume>
+      <name>Giridhar Gowda G A</name>
+      <role>Java Full Stack Developer</role>
+      <location>Hassan, Karnataka</location>
+      <graduation>2027</graduation>
+    </resume>
+  `;
+
+  const xslText = `
+    <xsl:stylesheet version='1.0' xmlns:xsl='http://www.w3.org/1999/XSL/Transform'>
+      <xsl:template match='/'>
+        <div style="border:1px solid #ccc;padding:15px;">
+          <h2><xsl:value-of select='resume/name'/></h2>
+          <h4><xsl:value-of select='resume/role'/></h4>
+          <p><strong>Location:</strong> <xsl:value-of select='resume/location'/></p>
+          <p><strong>Graduation:</strong> <xsl:value-of select='resume/graduation'/></p>
+        </div>
+      </xsl:template>
+    </xsl:stylesheet>
+  `;
+
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(xmlText, "application/xml");
+  const xsl = parser.parseFromString(xslText, "application/xml");
+
+  if (window.XSLTProcessor) {
+    const proc = new XSLTProcessor();
+    proc.importStylesheet(xsl);
+    const result = proc.transformToFragment(xml, document);
+    const output = document.getElementById("xmlResult");
+    output.innerHTML = "";
+    output.appendChild(result);
+  }
+});
+</script>
+</body>
+</html>
